@@ -1,5 +1,5 @@
 <header>
-  {% if section.settings.logo_image %}
+  {% comment %} {% if section.settings.logo_image %}
     <a href="{{ shop.url }}" class="logo">
       <img src="{{ section.settings.logo_image | asset_url }}" alt="{{ shop.name }}" width="150" height="50">
     </a>
@@ -17,12 +17,12 @@
 
   {% for block in section.blocks %}
     {% render block.type %}
-  {% endfor %}
+  {% endfor %} {% endcomment %}
 </header>
 
 {% schema %}
 {
-  "name": "tisso-header",
+  "name": "Tisso Header",
   "tag": "header",
   "class": "section-header",
   "max_blocks": 3,
@@ -49,8 +49,8 @@
       "type": "url",
       "id": "tisso_button_link",
       "label": "Button Link",
-      "default": "/gifts"
-    }
+      "default": "/"
+    },
   
 
   ],
