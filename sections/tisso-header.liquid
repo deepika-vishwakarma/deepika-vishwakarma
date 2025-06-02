@@ -1,7 +1,7 @@
 <header>
   {% if section.settings.logo_image %}
-    <a href="{{ shop.url }}/" class="logo">
-      <img src="{{ section.settings.logo_image | asset_url }}" alt="Tisso Logo" width="150" height="50">
+    <a href="{{ shop.url }}" class="logo">
+      <img src="{{ section.settings.logo_image | asset_url }}" alt="{{ shop.name }}" width="150" height="50">
     </a>
 {%endif%}
   {% if section.settings.site_note %}
@@ -54,11 +54,7 @@
   
 
   ],
-  "presets": [
-    {
-      "name": "Tisso Header"
-    }
-  ],
+ 
   "blocks": [
     {
       "type": "@app"
