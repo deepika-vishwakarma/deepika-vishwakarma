@@ -1,4 +1,5 @@
 <header>
+  hello this is cutom tisso headr
  {% if section.settings.logo_image %}
     <a href="{{ shop.url }}" class="logo">
       <img src="{{ section.settings.logo_image | asset_url }}" alt="{{ shop.name }}" width="150" height="50">
@@ -15,9 +16,7 @@
     </a>
   {% endif %}
 
-  {% for block in section.blocks %}
-    {% render block.type %}
-  {% endfor %} 
+
 </header>
 
 {% schema %}
