@@ -1,4 +1,4 @@
-<header>
+<div class="tisso-header">
   hello this is cutom tisso headr
  {% if section.settings.logo_image %}
     <a href="{{ shop.url }}" class="logo">
@@ -17,7 +17,7 @@
   {% endif %}
 
 
-</header>
+</div>
 
 {% schema %}
 {
@@ -36,19 +36,19 @@
       "type": "text",
       "id": "site_note",
       "label": "Site Note",
-      "default": ""
+      "default": "Some Text Here",
     },
     {
       "type": "text",
       "id": "tisso_button_label",
       "label": "Tisso Button Label",
-      "default": ""
+      "default": "Some Text Here",
     },
     {
       "type": "url",
       "id": "tisso_button_link",
       "label": "Tisso Button Link",
-      "default": ""
+      "default": "/"
     }
   ],
  
