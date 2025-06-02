@@ -26,20 +26,30 @@
 
 
     "settings": [
-   
-  
-
-  ],
- "presets": [
     {
-      "name": "Tisso Header",
-      "category": "Header"
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "site_note",
+      "label": "Site Note",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "tisso_button_label",
+      "label": "Tisso Button Label",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "tisso_button_link",
+      "label": "Tisso Button Link",
+      "default": ""
     }
   ],
-  "blocks": [
-    {
-      "type": "@app"
-    }
-  ]
+ 
 }
 {% endschema %} 
