@@ -1,5 +1,5 @@
 <header>
-  {% comment %} {% if section.settings.logo_image %}
+ {% if section.settings.logo_image %}
     <a href="{{ shop.url }}" class="logo">
       <img src="{{ section.settings.logo_image | asset_url }}" alt="{{ shop.name }}" width="150" height="50">
     </a>
@@ -17,16 +17,15 @@
 
   {% for block in section.blocks %}
     {% render block.type %}
-  {% endfor %} {% endcomment %}
+  {% endfor %} 
 </header>
-{% comment %} 
+
 {% schema %}
 {
   "name": "Tisso Header",
-  "tag": "header",
-  "class": "section-header",
-  "max_blocks": 3,
-  "settings": [
+
+
+    "settings": [
     {
       "type": "image_picker",
       "id": "logo_image",
@@ -54,11 +53,16 @@
   
 
   ],
- 
+ "presets": [
+    {
+      "name": "Tisso Header",
+      "category": "Header"
+    }
+  ],
   "blocks": [
     {
       "type": "@app"
     }
   ]
 }
-{% endschema %} {% endcomment %}
+{% endschema %} 
